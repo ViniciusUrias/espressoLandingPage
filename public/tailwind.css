@@ -1,3 +1,39 @@
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Sofia Pro;
+    src: url(/fonts/SofiaProMediumAz.otf) format("opentype");
+  }
+    html, body{
+        font-family: Sofia Pro;
+        
+    }
+    h1 {
+      @apply text-white;
+      @apply text-6xl;
+      @apply font-sofia;
+    }
+    p {
+      @apply text-gray-400;
+      @apply text-3xl;
+       
+    }
+    h2{
+      @apply text-yellow-400;
+      
+      @apply text-2xl;
+    }
+
+    span{
+      @apply text-gray-400;
+      @apply text-2xl;
+      @apply break-words;
+     
+    }
+   
+  }
